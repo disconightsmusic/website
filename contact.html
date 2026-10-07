@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Disco Nights</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html"><img src="images/logo.png" alt="Disco Nights"></a>
+    <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="releases.html">Releases</a>
+      <a href="roster.html">Roster</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero small">
+      <span class="eyebrow">Get in touch</span>
+      <h1 class="page-title">Contact</h1>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>General &amp; Bookings</h3>
+          <a href="mailto:info@disconights.com">info@disconights.com</a>
+          <h3>Demos</h3>
+          <p>Send us a private streaming link (no attachments) with a short intro about you.</p>
+          <h3>Follow</h3>
+          <p>Instagram &middot; SoundCloud &middot; Spotify</p>
+        </div>
+
+        <form id="contact-form">
+          <label>Name <input type="text" name="name" required></label>
+          <label>Email <input type="email" name="email" required></label>
+          <label>Topic
+            <select name="topic">
+              <option>General</option>
+              <option>Demo submission</option>
+              <option>Booking</option>
+              <option>Press</option>
+            </select>
+          </label>
+          <label>Message <textarea name="message" required></textarea></label>
+          <button class="btn" type="submit" style="align-self:flex-start; margin-top:0;">Send</button>
+          <p class="form-note" id="form-note"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img src="images/logo.png" alt="Disco Nights">
+    <span>&copy; 2026 Disco Nights. All rights reserved.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
